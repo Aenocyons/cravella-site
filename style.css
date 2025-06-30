@@ -72,11 +72,15 @@ nav a:hover {
 }
 
 .cta-btn {
+  display: inline-block;
   background-color: #d45a3d;
   color: white;
-  padding: 0.8em 1.4em;
+  padding: 0.8em 1.6em;
   border-radius: 8px;
   font-weight: bold;
+  font-size: 1.05em;
+  margin-top: 1.2em;
+  text-align: center;
   transition: background 0.3s ease;
 }
 
