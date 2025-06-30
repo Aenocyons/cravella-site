@@ -26,15 +26,17 @@ header {
 }
 
 .logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #d45a3d;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 40px;
+  height: 36px;
   vertical-align: middle;
+  display: inline-block;
+  font-size: initial;
 }
+
 
 nav a {
   margin-left: 1.5em;
