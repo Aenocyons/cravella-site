@@ -128,3 +128,19 @@ footer .credit {
   font-size: 0.85em;
   color: #947f70;
 }
+
+.wa-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25D366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.wa-sticky img {
+  width: 36px;
+  height: 36px;
+}
