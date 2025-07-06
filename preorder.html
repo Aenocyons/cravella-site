@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<header>
+<header class="sticky">
   <div class="logo">
     <img src="assets/logo.png" alt="Logo Cravella" />
     <span style="margin-left: 8px;">Cravella</span>
@@ -21,22 +21,22 @@
 </header>
 
 <section id="form-container">
-  <h2>Form Pre-order 🍰</h2>
-  <p>Lengkapi data di bawah ini dan tim Cravella akan segera menghubungi kamu!</p>
+  <h2 class="form-title">Formulir Pre-order 🍰</h2>
+  <p class="form-subtitle">Lengkapi data di bawah ini dan tim Cravella akan segera menghubungimu. Kami percaya, dessert terbaik lahir dari komunikasi terbaik.</p>
 
   <form name="cravella-preorder" method="POST" data-netlify="true" id="form">
     <input type="hidden" name="form-name" value="cravella-preorder" />
 
-    <label>Nama Lengkap:
-      <input type="text" name="nama" required />
+    <label for="nama">Nama Lengkap
+      <input type="text" name="nama" id="nama" placeholder="Tulis nama kamu..." required />
     </label>
 
-    <label>Nomor WhatsApp:
-      <input type="tel" name="whatsapp" placeholder="+62..." required />
+    <label for="whatsapp">Nomor WhatsApp
+      <input type="tel" name="whatsapp" id="whatsapp" placeholder="+62..." required />
     </label>
 
-    <label>Pilih Produk:
-      <select name="produk" required>
+    <label for="produk">Pilih Produk Favorit
+      <select name="produk" id="produk" required>
         <option disabled selected value="">-- Pilih Menu --</option>
         <option>Cheesecake - Oreo</option>
         <option>Cheesecake - Strawberry</option>
@@ -52,11 +52,11 @@
       </select>
     </label>
 
-    <label>Catatan Tambahan:
-      <textarea name="catatan" rows="4" placeholder="Misal: request tanpa topping..."></textarea>
+    <label for="catatan">Catatan Tambahan
+      <textarea name="catatan" id="catatan" rows="4" placeholder="Misal: request tanpa topping..."></textarea>
     </label>
 
-    <button type="submit">Kirim Pre-order 🚀</button>
+    <button type="submit" class="cta-btn">Kirim Pesanan 🚀</button>
   </form>
 </section>
 
@@ -65,7 +65,7 @@
 </footer>
 
 <a href="https://wa.me/6285179934757?text=Halo%20Cravella%2C%20saya%20mau%20pre-order%20dessertnya%20dong!" class="wa-sticky" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 </a>
 
 </body>
