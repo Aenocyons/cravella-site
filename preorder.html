@@ -60,6 +60,11 @@
   </form>
 </section>
 
+  <div id="loading-indicator">
+  <div class="loading-spinner"></div>
+  <p style="color:#a35e45; margin-top: 0.5em;">Mengirim pre-order...</p>
+</div>
+
 <footer>
   <p>&copy; 2024 Cravella. Crafted with ❤️ in Indonesia.</p>
 </footer>
@@ -68,5 +73,15 @@
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 </a>
 
+  <script>
+  const form = document.getElementById('form');
+  const loading = document.getElementById('loading-indicator');
+
+  form.addEventListener('submit', () => {
+    loading.style.display = 'block';
+  });
+</script>
+
+  
 </body>
 </html>
