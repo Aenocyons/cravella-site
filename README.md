@@ -1,25 +1,41 @@
-# Cravella
+# 🍰 Cravella — Cheesecake & Dessert Premium
 
-**Cravella** adalah UMKM Indonesia yang bergerak di bidang dessert premium — dari cheesecake, cookies, mochi, hingga maccaroni schotel. Situs ini adalah landing page resmi Cravella yang didesain untuk memperkenalkan brand, memudahkan konsultasi, dan menampilkan menu dessert kekinian.
+Cravella adalah UMKM Indonesia di bidang dessert homemade yang melayani pemesanan berbasis pre-order. Situs ini dibuat sebagai bagian dari Capstone Project HACKTIV8 Student Developer Initiative, menggunakan AI IBM Granite untuk mengoptimalkan proses pembuatan kode dan desain selama development.
 
-## 🔧 Teknologi
-- HTML + CSS (tanpa framework)
-- Responsive layout
-- Di-deploy dengan Netlify
+## 🎯 Project Goals
+- Menyediakan informasi produk dessert premium secara responsif
+- Membuka jalur konsultasi dan pemesanan via WhatsApp dan form Netlify
+- Meningkatkan efisiensi dan struktur proyek dengan bantuan AI (IBM Granite)
 
-## ✨ Tentang Cravella
-Cravella didirikan oleh dua pelajar penuh semangat, **Aprilia Tree Yanto** & **Sean Anthony Sebastian Kneefel**, sejak 21 Februari 2024. Semua produk dibuat dengan pre-order (5–7 hari) untuk memastikan kualitas rasa yang fresh dan khas.
+## 🔧 Technologies Used
+- **HTML5**: Struktur semantik dan SEO-friendly
+- **CSS (vanilla)**: Styling manual untuk fleksibilitas
+- **Google Fonts**: Typography modern
+- **Netlify Form Handling**: Backendless form submission
+- **IBM Granite (AI Assisted)**: Digunakan selama fase coding untuk:
+  - Generate struktur HTML dan semantic tag
+  - Saran styling Tailwind-like yang disesuaikan ke CSS manual
+  - Refactor dan validasi form pre-order
 
-> “Lebih dari 10 pelanggan sudah jatuh cinta, dengan tingkat kepuasan 90%!”
+## 📦 Features
+- Landing page responsif (desktop & mobile)
+- Halaman menu dinamis dan informatif
+- Form pre-order dengan validasi sederhana
+- Shortcut WhatsApp sticky button
+- Navigasi smooth antar bagian
+- Branding visual menarik sesuai target pasar
 
-## 📦 Fitur Saat Ini
-- Tampilan ringan & mobile-friendly
-- Tombol WhatsApp untuk pemesanan
-- Informasi menu, brand story, dan kontak
+## 🚀 Deployment
+- Live Website: [cravella.netlify.app](https://cravella.netlify.app)
+- Repo GitHub: [github.com/Aenocyons/cravella-site](https://github.com/Aenocyons/cravella-site)
 
-## 🚀 Live Site
-[https://cravella.netlify.app](https://cravella.netlify.app)
+## 🧠 AI Support Explanation
+IBM Granite membantu menyusun awal struktur HTML, memberikan ide layout untuk section hero dan tentang, serta menyarankan styling yang optimal dan ringan. Contoh penggunaan:
+- Prompting Granite untuk membuat section "Tentang Kami" dengan visual hierarchy yang baik
+- Optimasi responsivitas untuk layout dan tombol CTA
+- Saran validasi form HTML sederhana tanpa backend
 
-## 📞 Kontak
-- WhatsApp: +62 851-7993-4757
+## 📞 Contact
+- WhatsApp: [+62 851-7993-4757](https://wa.me/6285179934757)
 - Instagram: [@cravella.id](https://instagram.com/cravella.id)
+- LinkedIn: [Cravella](https://linkedin.com/company/cravella)
