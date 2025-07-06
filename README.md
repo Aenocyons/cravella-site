@@ -1,41 +1,70 @@
 # 🍰 Cravella — Cheesecake & Dessert Premium
 
-Cravella adalah UMKM Indonesia di bidang dessert homemade yang melayani pemesanan berbasis pre-order. Situs ini dibuat sebagai bagian dari Capstone Project HACKTIV8 Student Developer Initiative, menggunakan AI IBM Granite untuk mengoptimalkan proses pembuatan kode dan desain selama development.
+Cravella adalah UMKM Indonesia yang menghadirkan dessert homemade seperti cheesecake, cookies, mochi, dan macaroni schotel melalui sistem pre-order. Website ini dikembangkan sebagai bagian dari Capstone Project HACKTIV8 Student Developer Initiative, dengan dukungan AI IBM Granite untuk mempercepat dan menyempurnakan proses pembuatan kode serta interaksi pelanggan melalui chatbot.
+
+
 
 ## 🎯 Project Goals
-- Menyediakan informasi produk dessert premium secara responsif
-- Membuka jalur konsultasi dan pemesanan via WhatsApp dan form Netlify
-- Meningkatkan efisiensi dan struktur proyek dengan bantuan AI (IBM Granite)
+
+- Menyediakan informasi dan branding produk secara profesional dan responsif
+- Mempermudah proses pemesanan melalui form pre-order dan tombol WhatsApp
+- Meningkatkan efisiensi coding dan interaksi pelanggan dengan bantuan AI
+
+
 
 ## 🔧 Technologies Used
-- **HTML5**: Struktur semantik dan SEO-friendly
-- **CSS (vanilla)**: Styling manual untuk fleksibilitas
-- **Google Fonts**: Typography modern
-- **Netlify Form Handling**: Backendless form submission
-- **IBM Granite (AI Assisted)**: Digunakan selama fase coding untuk:
-  - Generate struktur HTML dan semantic tag
-  - Saran styling Tailwind-like yang disesuaikan ke CSS manual
-  - Refactor dan validasi form pre-order
+
+- **HTML5 & CSS3 (vanilla)**  
+  → Dipilih karena ringan, fleksibel, dan mudah dikustomisasi tanpa framework tambahan.  
+- **Google Fonts (Quicksand)**  
+  → Memberikan nuansa modern dan friendly sesuai citra brand Cravella.  
+- **Netlify**  
+  → Hosting cepat, otomatisasi deploy, dan dukungan native untuk form handling tanpa backend.  
+- **Netlify Forms**  
+  → Mendukung form pre-order tanpa konfigurasi server tambahan.  
+- **IBM Granite 3.3 2b via Ollama (AI Assisted)**  
+  → Membantu dalam menyusun dan merevisi struktur HTML, style layout responsif, dan copywriting.
+- **Docker & Open WebUI**  
+  → Untuk menghosting IBM Granite secara lokal selama fase pengembangan.  
+- **n8n + AI Agent**  
+  → Digunakan untuk membuat chatbot Whatsapp Cravella via Docker container.
+
+
 
 ## 📦 Features
-- Landing page responsif (desktop & mobile)
-- Halaman menu dinamis dan informatif
-- Form pre-order dengan validasi sederhana
-- Shortcut WhatsApp sticky button
-- Navigasi smooth antar bagian
-- Branding visual menarik sesuai target pasar
 
-## 🚀 Deployment
-- Live Website: [cravella.netlify.app](https://cravella.netlify.app)
-- Repo GitHub: [github.com/Aenocyons/cravella-site](https://github.com/Aenocyons/cravella-site)
+- Responsive landing page dan struktur semantik
+- Navigasi yang smooth dan mobile-first
+- Form pre-order langsung terhubung ke Netlify
+- Sticky WhatsApp shortcut untuk komunikasi cepat
+- Branding visual konsisten, cocok untuk UMKM kuliner
+- Kompatibel untuk ekspansi fitur otomatis (chatbot, notifikasi, dsb.)
+
+
 
 ## 🧠 AI Support Explanation
-IBM Granite membantu menyusun awal struktur HTML, memberikan ide layout untuk section hero dan tentang, serta menyarankan styling yang optimal dan ringan. Contoh penggunaan:
-- Prompting Granite untuk membuat section "Tentang Kami" dengan visual hierarchy yang baik
-- Optimasi responsivitas untuk layout dan tombol CTA
-- Saran validasi form HTML sederhana tanpa backend
+
+Pengembangan proyek ini dibantu oleh **IBM Granite 3.3 2b** yang dijalankan secara lokal menggunakan **Ollama** dalam container Docker dan diakses melalui **Open WebUI**. AI digunakan untuk:
+
+- Menyusun dan merevisi struktur HTML (hero section, form, kontak)
+- Menyesuaikan style CSS untuk layout responsif & accessible
+- Memberikan copywriting bantuan untuk teks deskriptif dan tagline
+- Validasi visual hierarchy dan pengalaman pengguna
+- Eksplorasi layout alternatif secara cepat melalui prompt
+
+Untuk berinteraksi dengan pelanggan, chatbot Whatsapp dibuat menggunakan **n8n** berbasis Docker, yaitu workflow Whatsapp API yang terhubung dengan AI Agent untuk membantu menjawab pertanyaan dan mencatat pesanan secara otomatis.
+
+
+
+## 🚀 Deployment
+
+- 🌐 Live Website: [https://cravella.netlify.app](https://cravella.netlify.app)
+- 🛠️ GitHub Repo: [https://github.com/Aenocyons/cravella-site](https://github.com/Aenocyons/cravella-site)
+
+
 
 ## 📞 Contact
-- WhatsApp: [+62 851-7993-4757](https://wa.me/6285179934757)
+
+- WhatsApp: [wa.me/6285179934757](https://wa.me/6285179934757)
 - Instagram: [@cravella.id](https://instagram.com/cravella.id)
 - LinkedIn: [Cravella](https://linkedin.com/company/cravella)
