@@ -290,20 +290,18 @@ button[type="submit"]:hover {
 
 /* Menu Cards Layout */
 .menu-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2em;
-  justify-content: center;
   margin-top: 2em;
+  padding: 0 1em;
 }
 
 .menu-card {
-  width: 260px;
   background: #fffaf8;
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
-  padding: 1.2em;
-  text-align: center;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -316,26 +314,26 @@ button[type="submit"]:hover {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 0.8em;
+  display: block;
 }
 
 .menu-card h3 {
   color: #d45a3d;
-  margin-top: 0.5em;
+  margin: 0.8em 0 0.3em;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .menu-card p {
   font-size: 0.95em;
   color: #6a4c40;
-  margin-top: 0.4em;
+  text-align: center;
+  padding: 0 1em 1em;
 }
 
-@media (max-width: 600px) {
-  .menu-card {
-    width: 100%;
-    max-width: 340px;
+@media (max-width: 480px) {
+  .menu-card img {
+    height: 140px;
   }
 
   .hero-text h1 {
