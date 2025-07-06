@@ -1,3 +1,4 @@
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,52 +7,75 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #fff9f4;
+  background: linear-gradient(to bottom, #fff9f4, #ffece0);
   color: #3e2f27;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 a {
   color: #d45a3d;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+a:hover {
+  color: #a63a23;
+}
+
+/* Header */
 header {
   background-color: #ffe8dc;
-  padding: 1.2em 2em;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.6em;
 }
 
 .logo img {
-  height: 36px;
-  vertical-align: middle;
-  display: inline-block;
-  font-size: initial;
+  height: 40px;
+  display: block;
 }
 
-
+/* Navigation */
 nav a {
   margin-left: 1.5em;
-  font-weight: 500;
+  font-weight: 600;
+  position: relative;
 }
 
-nav a:hover {
-  color: #a63a23;
+nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #d45a3d;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
 
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
 .hero {
   display: flex;
   flex-wrap: wrap;
-  padding: 3em 2em;
-  background-color: #fff0e6;
+  padding: 4em 2em;
+  background: radial-gradient(circle at top left, #fff0e6, #fff9f4);
   align-items: center;
   justify-content: center;
 }
@@ -62,30 +86,32 @@ nav a:hover {
 }
 
 .hero-text h1 {
-  font-size: 2.4em;
+  font-size: 2.6em;
   margin-bottom: 0.5em;
   color: #d45a3d;
 }
 
 .hero-text p {
-  margin-bottom: 1em;
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+  color: #6a4c40;
 }
 
 .cta-btn {
   display: inline-block;
   background-color: #d45a3d;
   color: white;
-  padding: 0.8em 1.6em;
-  border-radius: 8px;
+  padding: 1em 2em;
+  border-radius: 30px;
   font-weight: bold;
   font-size: 1.05em;
-  margin-top: 1.2em;
-  text-align: center;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cta-btn:hover {
   background-color: #b9422b;
+  transform: scale(1.05);
 }
 
 .hero-img {
@@ -95,19 +121,22 @@ nav a:hover {
 
 .hero-img img {
   max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 5px 14px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
+/* Sections */
 section {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 3em 2em;
+  padding: 4em 2em;
 }
 
 h2 {
   color: #d45a3d;
+  font-size: 2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 ul {
@@ -119,8 +148,11 @@ ul {
   font-style: italic;
   font-size: 0.95em;
   color: #7a5b4c;
+  text-align: center;
+  margin-top: 1em;
 }
 
+/* Footer */
 footer {
   background-color: #ffe8dc;
   text-align: center;
@@ -140,15 +172,21 @@ footer .credit {
   color: #947f70;
 }
 
+/* WhatsApp Sticky */
 .wa-sticky {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 1000;
   background-color: #25D366;
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.wa-sticky:hover {
+  transform: scale(1.08);
 }
 
 .wa-sticky img {
@@ -156,17 +194,21 @@ footer .credit {
   height: 36px;
 }
 
+/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 #form-container {
   max-width: 700px;
   margin: auto;
   padding: 3em 2em;
+  background: #fffdfb;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
 }
 
 label {
@@ -174,29 +216,39 @@ label {
   flex-direction: column;
   font-weight: 600;
   color: #5c3b2e;
+  font-size: 0.95em;
 }
 
 input, select, textarea {
-  padding: 0.7em;
+  padding: 0.85em;
   font-size: 1em;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-top: 0.3em;
+  border-radius: 10px;
+  margin-top: 0.4em;
   background: #fffaf8;
+  transition: border 0.3s ease;
 }
 
+input:focus, select:focus, textarea:focus {
+  border-color: #d45a3d;
+  outline: none;
+}
+
+/* Submit Button */
 button[type="submit"] {
   background-color: #d45a3d;
   color: white;
-  padding: 0.8em 1.4em;
+  padding: 1em 2em;
   font-size: 1.05em;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
   background-color: #b9422b;
+  transform: translateY(-2px);
 }
