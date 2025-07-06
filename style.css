@@ -252,3 +252,38 @@ button[type="submit"]:hover {
   background-color: #b9422b;
   transform: translateY(-2px);
 }
+
+/* CTA Pulse Animation on Hover */
+.cta-btn:hover {
+  background-color: #b9422b;
+  transform: scale(1.05);
+  animation: pulse 0.4s ease-in-out forwards;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1.05); }
+}
+
+/* Optional: Form Loading Spinner (hidden by default) */
+#loading-indicator {
+  display: none;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eee;
+  border-top: 4px solid #d45a3d;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
