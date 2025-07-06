@@ -287,3 +287,67 @@ button[type="submit"]:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Menu Cards Layout */
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.menu-card {
+  width: 260px;
+  background: #fffaf8;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  padding: 1.2em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8em;
+}
+
+.menu-card h3 {
+  color: #d45a3d;
+  margin-top: 0.5em;
+  font-size: 1.1em;
+}
+
+.menu-card p {
+  font-size: 0.95em;
+  color: #6a4c40;
+  margin-top: 0.4em;
+}
+
+@media (max-width: 600px) {
+  .menu-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-img img {
+    max-width: 90%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
